@@ -68,7 +68,7 @@ export function Login() {
 				<label htmlFor="password">Ваш пароль</label>
 				<Input id="password" name="password" type="password" placeholder='Пароль' />
 			</div>
-			<Button appearence="big">Вход</Button>
+			<Button tooltip='Вход'appearence="big">Вход</Button>
 		</form>
 		<div className={styles['links']}>
 			<div>Нет акканута?</div>

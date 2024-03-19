@@ -34,7 +34,7 @@ export function Product() {
 								<img src="/back.svg" />
 							</button>
 							<Headling>{data.name}</Headling>
-							<Button className={styles['add-button']} onClick={increase}>
+							<Button tooltip='В корзину' className={styles['add-button']} onClick={increase}>
 								<img src="/cart-button-icon.svg"/>
 								&nbsp; В корзину
 							</Button>

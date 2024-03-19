@@ -81,7 +81,7 @@ export function Cart() {
 			<div className={styles['price']}>{total + DELIVERY_FEE}&nbsp;<span>₽</span></div>
 		</div>
 		<div className={styles['checkout']}>
-			<Button appearence="big" onClick={checkout}>оформить</Button>
+			<Button tooltip='Оформить' appearence="big" onClick={checkout}>оформить</Button>
 		</div>
 	</>;
 }

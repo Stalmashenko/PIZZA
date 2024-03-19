@@ -46,7 +46,7 @@ export function Layout() {
 					</div>
 				</NavLink>
 			</div>
-			<Button className={styles['exit']} onClick={logout}>
+			<Button className={styles['exit']} onClick={logout} tooltip='Выход'>
 				<img src="/exit-icon.svg" alt="Иконка выхода" />
 				Выход
 			</Button>

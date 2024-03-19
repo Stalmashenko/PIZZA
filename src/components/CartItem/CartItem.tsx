@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { AppDispath } from '../../store/store';
 import { cartActions } from '../../store/cart.slice';
 import { CartItemProps } from './CartItem.props';
+import { Button } from '@fluentui/react-components';
+import { Delete24Regular } from '@fluentui/react-icons';
 
 function CartItem(props: CartItemProps) {
 	const dispatch = useDispatch<AppDispath>();
@@ -35,9 +37,7 @@ function CartItem(props: CartItemProps) {
 				<button className={styles['plus']} onClick={increase}>
 					<img src="/plus-icon.svg" alt="Добавить в корзину" />
 				</button>
-				<button className={styles['remove']} onClick={remove}>
-					<img src="/delete-icon.svg" alt="Удалить все" />
-				</button>
+				<Button icon={<Delete24Regular />} iconPosition="before" appearance='subtle'onClick={remove}/>	
 			</div>
 		</div>
 	);
